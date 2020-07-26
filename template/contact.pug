@@ -1,0 +1,38 @@
+extends base.pug
+
+block scripts
+    script("")
+
+block style
+    style
+        include ../static/CSS/style.css
+        include ../static/CSS/contactstyle.css
+    
+
+
+
+block content
+    div#home
+        div.container
+            h1 Contact US 
+
+            form(action="/api/user/contact",method="get",class="myForm")
+                input#name(type="text",name='name',class="myInput",placeholder="Enter Your Name")
+                input#phone(type="phone",name='phone',class="myInput",placeholder="Enter Your Phone")
+                input#email(type="email",name='email',class="myInput",placeholder="Enter Your Email")
+                input#address(type="text",name='address',class="myInput",placeholder="Enter Your Address")
+                textarea#desc(name='desc', cols="30", rows="10",class="myInput",placeholder="Enter your Description")
+                button(class="contact-btn")
+                    | Submit
+
+
+    div#contact-info
+        div#call
+            h3 Phone No:- 7784086095
+            h3 Watsapp No:- 9554383811
+
+        div#add
+            h3 Mailing Address:
+                p C- 83/78 C-Block Govindpuram, Ghaziabad. 
+            h3 Pincode - 201013
+            h3 Email -id pandeysulabhraj97@gmail.com

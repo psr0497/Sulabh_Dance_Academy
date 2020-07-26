@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts
+    script("")
+
+block style
+    style
+        include ../static/CSS/style.css
+
+
+block content
+    div#home
+        div.container
+            h1 Contact US 
+
+            form(action="",method="",class="")
+                input#name(type="text",name='name',class="myInput",placeholder="Enter Your Name")
+                input#phone(type="phone",name='phone',class="myInput",placeholder="Enter Your Phone")
+                input#email(type="email",name='email',class="myInput",placeholder="Enter Your Email")
+                input#password(type="password",name='password',class="myInput",placeholder="Enter Your Password")
+                input#confirm_password(type="password",name='confirm_password',class="myInput",placeholder="Re-Enter Your Password")
+                button(class="btn")
+                    | Submit

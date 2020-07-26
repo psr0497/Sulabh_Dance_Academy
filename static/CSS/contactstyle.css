@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+#home::before{
+    content: "";
+    background: url("../static/BACKGROUND/michael-afonso-nZU76qWy-T8-unsplash.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 103%;
+    z-index: -1;
+    opacity: 0.6;
+
+    width: 100%;
+}
+
+
+
+
+.container h1{
+    text-align: center;
+    margin: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+.myForm{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 112%;
+        padding: 20px;
+       
+}
+
+.myInput{
+    width: 50%;
+    padding: 8px;
+    margin: 7px;
+    border-radius: 7px;
+    border: 3px solid black;
+    outline: none;
+}
+.contact-btn{
+    margin: 10px;
+    border: 2px solid black;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #ef3333;
+    cursor: pointer;
+    outline: none;
+}
+.container{
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-info::before{
+
+    content: "";
+    position:absolute;
+    background: url("../static/map.png") no-repeat center center/cover;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-info{
+    
+    font-size: 25px;
+    display: flex;
+    margin-top: 40px;
+}
+
+#call{
+
+    padding: 65px 114px;
+    margin: 36px;
+    text-align: center;
+    margin-left: 30px;
+
+}
+#add{
+    padding: 57px 100px;
+    margin: 20px;
+    text-align: center;
+    margin-left: 100px;
+
+}
+h3{
+    padding: 5px;
+}

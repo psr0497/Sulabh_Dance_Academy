@@ -1,0 +1,24 @@
+extends base.pug 
+
+
+block scripts
+    script("")
+
+block style
+    style
+        include ../static/CSS/style.css
+        include ../static/CSS/classInfostyle.css
+
+block content
+    div#class-content 
+        h1 Information For Classes:
+    div.class3
+        div.class1
+            h3 In WeekDays 
+        div.class2 
+            H3 In Weekends
+    div.special
+        h2 Special Classes In Summer Vacation
+        div.class5
+            div.class4
+                H3 Only In WeekDays

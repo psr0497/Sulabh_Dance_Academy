@@ -1,0 +1,53 @@
+extends base.pug
+
+block scripts
+    script("")
+
+block style
+    style
+        include ../static/CSS/style.css
+
+
+block content
+       
+        section#introSection
+            div Welcome To Sulabh Dance Academy
+            div.small !! Get Ready For Dance !!
+
+        section#mission
+            h3 Our Mission
+            div.cards
+                h4 Dance Perfection
+                div.cards-box
+                    div.cards-img
+                        img(src="../static/b1.png")
+                    div.cards-content
+                        p This is the best dance academy of the universe
+                
+
+            div.cards
+                h4 Dance The Way You Like 
+                div.cards-box
+                    div.cards-img
+                        img(src="../static/b2.png")
+                    div.cards-content
+                        p This is the best dance academy of the universe           
+            
+            div.cards
+                h4 Expert Teaching
+                div.cards-box
+                    div.cards-img
+                        img(src="../static/b3.png")
+                    div.cards-content
+                         p This is the best dance academy of the universe
+        
+    
+
+        section#sponsorSection
+            h3 Our Sponsor
+                div#sponsor
+                    img(src="../static/LOGOS/kfc.png",alt="sponsor Image",class="spImage")
+                    img(src="../static/LOGOS/star.png", alt="sponsor Image",class="spImage")
+                    img(src="../static/LOGOS/dell.png",alt="sponsor Image",class="spImage")
+                    img(src="../static/LOGOS/pic6.png",alt="sponsor Image",class="spImage")
+                    img(src="../static/LOGOS/colors.png",alt="sponsor Image",class="spImage")
